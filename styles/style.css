@@ -9,6 +9,13 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@supports (-webkit-text-stroke: 1px black) {
+  .page {
+    font-family: Inter-Variable, sans-serif;
+    color: black;
+  }
+}
+
 
 .page {
   min-inline-size: 320px;
@@ -17,8 +24,9 @@
   padding: 100px 370px 0;
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
-  font-family: Inter-Variable, sans-serif;
+  
   width: 1440px;
+  font-variation-settings: 'wght' 500, 'wdth' 100;
 }
 
 .header {
