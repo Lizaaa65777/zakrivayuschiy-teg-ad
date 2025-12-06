@@ -13,4 +13,227 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  margin: 0 auto;
+  padding: 100px 370px 0;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  font-family: Inter-Variable, sans-serif;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  border: 2px solid black;
+  padding: 128px 120.5px 0;
+  margin-bottom: 100px;
+
+}
+
+.title {
+  font-family: 'PressStart2P-Regular', sans-serif;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.theme {
+  font-family: 'PressStart2P-Regular', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.theme ol li {
+  margin-left: 187px;
+  margin-bottom: 14px;
+}
+
+/* Post*/
+main:last-child{
+  margin-bottom: 50px;
+}
+.post {
+  background-color: white;
+  border: 2px solid black;
+  margin-bottom: 52px;
+}
+
+.title_post {
+  font-size: 18px;
+  padding: 3px 10px;
+}
+
+.content {
+  font-size: 18px;
+  padding: 25px;
+}
+
+.post_img {
+  width: 696px;
+  height: 696px;
+}
+
+.post_button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 25px 25px;
+}
+
+.card__icon-button {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.like-icon {
+  transition: transform 0.3s ease;
+}
+
+.like-icon.is-liked {
+  animation: likes 1s steps(1) forwards ;
+  animation-iteration-count: 1;
+}
+
+.card__like-button {
+  width: 130px;
+  border: 2px solid black;
+  font-family: 'PressStart2P-Regular', sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.2s ease 0.2s;
+}
+
+.button__text {
+  color: black;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.2s ease 0.2s;
+}
+
+.card__like-button:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.card__like-button:hover .button__text {
+  color: white;
+}
+
+.card__like-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 0;
+}
+
+.card__like-button:not(:hover)::before {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card__like-button:focus {
+  box-shadow: 2px 2px 0px 0px black;
+}
+
+
+@keyframes likes {
+  from {
+    background-image: url('../images/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/starting.svg');
+  }
+
+  40% {
+    background-image: url('../images/glow.svg');
+  }
+
+  60% {
+    background-image: url('../images/big.svg');
+  }
+
+  80% {
+    background-image: url('../images/sparkles.svg');
+  }
+
+  to {
+    background-image: url('../images/final.svg');
+  }
+}
+
+.like-icon:hover {
+  animation: hover 1s steps(1) infinite;
+}
+
+@keyframes hover {
+  from {
+    background-image: url('../images/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/hover/starting.svg');
+  }
+
+  60% {
+    background-image: url('../images/hover/glow.svg');
+  }
+}
+
+.like-icon:active {
+  animation: actives 1s steps(1) infinite;
+}
+
+@keyframes actives {
+  from {
+    background-image: url('../images/active/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/active/starting.svg');
+  }
+
+  60% {
+    background-image: url('../images/active/stroked.svg');
+  }
+}
+
+
+.btn_save{
+  width: 335px;
+  background-color: white;
+  border: 2px solid black;
+  margin: 0 auto 105px;
+  display: flex;
+  justify-content: center;
+  padding: 18.5px 0;
+  align-items: center;
+  
+}
+.btn_text{
+  font-size: 14px;
+  font-family: 'PressStart2P-Regular', sans-serif;
+}
+.btn_img{
+  margin-right: 8px;
 }
