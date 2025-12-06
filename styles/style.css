@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6C757D;
+  --font-size-base: 16px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -24,7 +33,7 @@
   padding: 100px 370px 0;
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
-  
+
   width: 1440px;
   font-variation-settings: 'wght' 500, 'wdth' 100;
 }

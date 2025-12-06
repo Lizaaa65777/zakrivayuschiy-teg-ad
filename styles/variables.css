@@ -1,1 +1,116 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --font-size-base: 16px;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+}
+
+body {
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: var(--spacing-medium);
+    margin: var(--spacing-small);
+}
+
+
+
+
+
+/* свойства модального окна по умолчанию */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1;
+    display: block;
+    /* делаем окно видимым */
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+    outline: 0;
+
+}
+
+/* свойства для заголовка модального окна */
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 30px;
+    overflow: auto;
+
+}
+
+.modal-form__inner {
+    display: grid;
+    grid-template-columns: 59px 234px;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.modal-form__inner h2 {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.modal-form__inner img {
+    width: 39px;
+    height: 39px;
+}
+
+.btn_close {
+    background-color: white;
+    width: 100%;
+    border: 2px solid black;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.btn_close a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
