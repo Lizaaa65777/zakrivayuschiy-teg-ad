@@ -9,3 +9,93 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+
+@keyframes likes {
+  from {
+    background-image: url('../images/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/starting.svg');
+  }
+
+  40% {
+    background-image: url('../images/glow.svg');
+  }
+
+  60% {
+    background-image: url('../images/big.svg');
+  }
+
+  80% {
+    background-image: url('../images/sparkles.svg');
+  }
+
+  to {
+    background-image: url('../images/final.svg');
+  }
+}
+
+.like-icon:hover {
+  animation: hover 1s steps(1) infinite;
+}
+
+@keyframes hover {
+  from {
+    background-image: url('../images/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/hover/starting.svg');
+  }
+
+  60% {
+    background-image: url('../images/hover/glow.svg');
+  }
+}
+
+.like-icon:active {
+  animation: actives 1s steps(1) infinite;
+}
+
+@keyframes actives {
+  from {
+    background-image: url('../images/active/initial.svg');
+
+  }
+
+  20% {
+    background-image: url('../images/active/starting.svg');
+  }
+
+  60% {
+    background-image: url('../images/active/stroked.svg');
+  }
+}
+
+.post:nth-child(2) .post_img{
+  filter: saturate(30%);
+}
+.post:nth-child(3) .post_img{
+  filter: saturate(500%);
+}
+.post:nth-child(4) .post_img{
+  filter: brightness(150%);
+}
+.post:nth-child(5) .post_img{
+  mix-blend-mode: difference;
+  filter: saturate(70%);
+}
+.post:nth-child(6) .post_img{
+  filter: sepia(80%); /*Даёт изображению тёплый коричневый тон. */
+}
+.post:nth-child(7) .post_img{
+  filter: blur(10px);
+}
+.post:nth-child(8) .post_img{
+   filter: hue-rotate(180deg) saturate(0.5) brightness(0.8);
+}

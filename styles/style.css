@@ -153,72 +153,6 @@ main:last-child{
 }
 
 
-@keyframes likes {
-  from {
-    background-image: url('../images/initial.svg');
-
-  }
-
-  20% {
-    background-image: url('../images/starting.svg');
-  }
-
-  40% {
-    background-image: url('../images/glow.svg');
-  }
-
-  60% {
-    background-image: url('../images/big.svg');
-  }
-
-  80% {
-    background-image: url('../images/sparkles.svg');
-  }
-
-  to {
-    background-image: url('../images/final.svg');
-  }
-}
-
-.like-icon:hover {
-  animation: hover 1s steps(1) infinite;
-}
-
-@keyframes hover {
-  from {
-    background-image: url('../images/initial.svg');
-
-  }
-
-  20% {
-    background-image: url('../images/hover/starting.svg');
-  }
-
-  60% {
-    background-image: url('../images/hover/glow.svg');
-  }
-}
-
-.like-icon:active {
-  animation: actives 1s steps(1) infinite;
-}
-
-@keyframes actives {
-  from {
-    background-image: url('../images/active/initial.svg');
-
-  }
-
-  20% {
-    background-image: url('../images/active/starting.svg');
-  }
-
-  60% {
-    background-image: url('../images/active/stroked.svg');
-  }
-}
-
-
 .btn_save{
   width: 335px;
   background-color: white;
@@ -237,3 +171,4 @@ main:last-child{
 .btn_img{
   margin-right: 8px;
 }
+
