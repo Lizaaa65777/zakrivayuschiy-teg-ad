@@ -25,6 +25,15 @@
   }
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  background-image:
+    linear-gradient(90deg, #000 50%, transparent 50%),
+    linear-gradient(0deg, #000 50%, transparent 50%);
+  background-size: 100% 960px;
+  background-color: #ccc;
+}
 
 .page {
   min-inline-size: 320px;
